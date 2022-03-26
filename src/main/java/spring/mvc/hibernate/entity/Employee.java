@@ -1,6 +1,7 @@
 package spring.mvc.hibernate.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
 
 @Entity
 @Table(name = "employees")
@@ -16,6 +17,7 @@ public class Employee {
     @Column(name = "department")
     private String department;
     @Column(name = "salary")
+    @Min(value = 500, message = "salary must not be less 500")
     private int salary;
 
     public Employee() {

@@ -1,0 +1,16 @@
+h3 {
+    color: burlywood;
+    font-style: italic;
+}
+body {
+    background: lightslategrey;
+}
+table {
+    border-collapse: separate;
+    border: solid 2px blue;
+    border-spacing: 5px 10px;
+}
+td {
+    padding: 0px 5px;
+    border: solid 3px blue;
+}
